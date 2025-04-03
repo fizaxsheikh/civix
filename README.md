@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -52,3 +53,8 @@ export default tseslint.config({
   },
 })
 ```
+=======
+# civix
+
+Civix is a civic engagement app designed to cut through the overwhelming noise of modern politics, making local government transparency and participation more accessible in an era of constant digital information overload. With the sheer volume of news, misinformation, and partisan spin flooding social media, it’s increasingly difficult for people to stay informed in an objective, actionable way—especially when figures like Trump and Elon Musk manipulate narratives through platforms like X (formerly Twitter) to shape public perception. Unlike traditional government websites that are cumbersome and inaccessible, Civix delivers real-time, geo-targeted updates on city council decisions, zoning laws, infrastructure projects, and local policies in a concise, digestible format. The app also live-streams city meetings, provides verified policy summaries, and allows users to directly engage with representatives without relying on corporate-controlled media algorithms. By decentralizing civic knowledge and putting the power back in the hands of individuals, Civix ensures that local politics remain transparent and actionable, helping users cut through the chaos and engage meaningfully with the decisions that actually affect their daily lives.
+>>>>>>> e0cd46683895af36a1a61894ff4f2d1bccc731f8
