@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Town Hall Meeting",
+      "date": "2025-05-01",
+      "location": "City Hall"
+    },
+    {
+      "id": 2,
+      "name": "Voter Registration Drive",
+      "date": "2025-04-15",
+      "location": "Community Center"
+    },
+    {
+      "id": 3,
+      "name": "Civic Tech Hackathon",
+      "date": "2025-06-01",
+      "location": "Tech Hub"
+    }
+  ]
+  

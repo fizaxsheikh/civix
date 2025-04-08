@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Jane Doe",
+      "position": "City Council Member",
+      "contact": "jane.doe@city.gov",
+      "votingHistory": ["Affordable Housing - Yes", "Clean Energy - Yes"]
+    },
+    {
+      "id": 2,
+      "name": "John Smith",
+      "position": "Assembly Member",
+      "contact": "john.smith@state.gov",
+      "votingHistory": ["Public Safety Reform - No", "Clean Energy - Yes"]
+    },
+    {
+      "id": 3,
+      "name": "Amira Patel",
+      "position": "State Senator",
+      "contact": "amira.patel@senate.gov",
+      "votingHistory": ["Education Equity - Yes", "Green Infrastructure - Yes"]
+    }
+  ]  

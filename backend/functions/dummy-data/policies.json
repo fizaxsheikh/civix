@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "Affordable Housing Initiative",
+      "summary": "Promotes low-income housing.",
+      "zip": "90024"
+    },
+    {
+      "id": 2,
+      "title": "Clean Energy Transition",
+      "summary": "Supports renewable energy programs.",
+      "zip": "10001"
+    },
+    {
+      "id": 3,
+      "title": "Public Safety Reform",
+      "summary": "Focuses on community-based safety.",
+      "zip": "90024"
+    },
+    {
+      "id": 4,
+      "title": "Education Equity Act",
+      "summary": "Funds under-resourced public schools.",
+      "zip": "94103"
+    },
+    {
+      "id": 5,
+      "title": "Green Infrastructure Plan",
+      "summary": "Expands green spaces in cities.",
+      "zip": "90024"
+    }
+  ]
+  
