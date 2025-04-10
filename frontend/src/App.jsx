@@ -1,19 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/Navbar'
-import {BrowserRouter as Router} from 'react-router-dom';
+import { useState } from 'react';
+import { Layout } from 'antd';
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+import Logo from './components/Logo';
+import MenuList from './components/MenuList';
+import ToggleThemeButton from './components/ToggleThemeButton';
 
+const { Header, Sider } = Layout;
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
+  const [darkTheme, setDarkTheme] = useState(true)
+
+  const toggleTheme = () => {
+    setDarkTheme(!darkTheme);
+  };
 
   return (
-    <>
-      <Router>
-        <Navbar />
-      </Router>
-      <div>
+    <Layout>
+      <Sider theme={darkTheme ? 'dark' : 'light'}
+      className="sidebar">
+        <Logo />
+        <MenuList darkTheme={darkTheme}/>
+        <ToggleThemeButton darkTheme={darkTheme}
+        toggleTheme={toggleTheme}/>
+        {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -32,10 +42,11 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
-
-    </>
-  )
-}
+      </p> */}
+      </Sider>
+    </Layout>
+    
+  );
+};
 
 export default App
