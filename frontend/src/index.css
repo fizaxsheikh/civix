@@ -10,6 +10,26 @@
     font-family: 'Inter', sans-serif;
 }
 
+.policies{
+    border: 1px solid rgb(193, 85, 85);
+    border-radius: 10px; 
+    box-shadow: 5px 5px 5px rgba(125, 123, 123, 0.1); 
+    padding: 20px; 
+    margin: 10px; 
+    text-align: center;
+    max-width: 250px;
+    display: inline-block; 
+}
+
+.policies .policy-image{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px; 
+}
+
+
+
 .sidebar {
     color: #333;
 }

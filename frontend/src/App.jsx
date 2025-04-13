@@ -5,9 +5,14 @@ import { Layout } from 'antd';
 import Logo from './components/Logo';
 import MenuList from './components/MenuList';
 import ToggleThemeButton from './components/ToggleThemeButton';
+import Policies from './policies-KS/policies';
 
 const { Header, Sider } = Layout;
 function App() {
+    return (
+      <Policies></Policies>
+    );
+
   // const [count, setCount] = useState(0)
   const [darkTheme, setDarkTheme] = useState(true)
 

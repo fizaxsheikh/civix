@@ -1,0 +1,15 @@
+
+import profilePic from './policies-KS/headshot.jpeg'
+
+function Policies(){
+    return(
+        <div className="policies">
+            <img className= "policy-image" src = {profilePic} alt="bill"></img>
+            <h2></h2>
+            <p>My name is Kayleen and I go to at UCLA !!</p>
+        </div> 
+    )
+
+}
+
+export default Policies
