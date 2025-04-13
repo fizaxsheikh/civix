@@ -1,5 +1,5 @@
 
-import profilePic from './policies-KS/headshot.jpeg'
+import profilePic from './headshot.jpeg'
 
 function Policies(){
     return(

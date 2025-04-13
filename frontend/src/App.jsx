@@ -8,9 +8,6 @@ import Policies from './policies-KS/policies';
 
 const { Header, Sider } = Layout;
 function App() {
-    return (
-      <Policies></Policies>
-    );
 
   // const [count, setCount] = useState(0)
   const [darkTheme, setDarkTheme] = useState(true)
@@ -28,6 +25,7 @@ function App() {
         <ToggleThemeButton darkTheme={darkTheme}
         toggleTheme={toggleTheme}/>
       </Sider>
+      <Policies></Policies>
     </Layout>
     
   );
