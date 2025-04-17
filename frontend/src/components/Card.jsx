@@ -1,5 +1,0 @@
-function RepCard() {
-
-}
-
-export default 
