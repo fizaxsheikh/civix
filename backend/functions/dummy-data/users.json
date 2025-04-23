@@ -1,0 +1,38 @@
+[
+  {
+    "id": "user123",
+    "name": "Fiza Sheikh",
+    "email": "fiza@email.com",
+    "zipCode": "90024",
+    "civicImpactScore": 120,
+    "badges": [
+      "Informed Citizen"
+    ],
+    "calendarPreferences": {
+      "eventTypes": [
+        "Meetings",
+        "Votes"
+      ],
+      "reminderTime": "24h"
+    },
+    "followedPolicies": [
+      "p1",
+      "p2"
+    ],
+    "lastLogin": "2025-04-07T15:10:00"
+  },
+  {
+    "id": "93bcc1ee-22dc-40ac-b9a1-6de813a4487c",
+    "name": "a",
+    "email": "a",
+    "zipCode": "a",
+    "civicImpactScore": 0,
+    "badges": [],
+    "calendarPreferences": {
+      "eventTypes": [],
+      "reminderTime": "24h"
+    },
+    "followedPolicies": [],
+    "lastLogin": "2025-04-17T22:07:40.436Z"
+  }
+]

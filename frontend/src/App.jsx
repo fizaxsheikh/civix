@@ -1,7 +1,10 @@
-// App.jsx
 import { useState } from 'react';
-import Layout from './components/Layout'; // Import your custom Layout component
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import UserProfile from ".pages/userProfile";
+
+import Layout from './components/Layout';
 import Policies from './policies-KS/policies';
+import CreateAccount from './pages/createAccount'; 
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -11,10 +14,21 @@ function App() {
   };
 
   return (
-    <Layout darkTheme={darkTheme} toggleTheme={toggleTheme}>
-      <Policies />
-      <p> what the </p>
-    </Layout>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout darkTheme={darkTheme} toggleTheme={toggleTheme}>
+              <Policies />
+              <p> what the </p>
+            </Layout>
+          }
+        />
+        <Route path="/create-account" element={<CreateAccount />} />
+        <Route path="/user/:id" element={<UserProfile />} />
+      </Routes>
+    </Router>
   );
 }
 
