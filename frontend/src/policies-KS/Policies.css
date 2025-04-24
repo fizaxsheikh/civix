@@ -57,7 +57,7 @@
   
   .sparkle {
     font-size: 24px;
-    color: #d1d5db;
+    color: #771c83;
     margin: 0 4px;
   }
   
@@ -66,6 +66,7 @@
     text-align: left;
     font-size: 14px;
     margin-bottom: 15px;
+    color:rgb(0, 0, 0)
   }
   
   /* Footer */
@@ -83,7 +84,7 @@
   
   .read-more {
     background-color: #9b5de5;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 5px 12px;
     border-radius: 5px;

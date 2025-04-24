@@ -32,15 +32,15 @@ function Policies() {
 
       {/* Image section */}
       <div className="image-section">
-        <span className="sparkle">✨</span>
-        <span className="sparkle">✨</span>
+        {/* <span className="sparkle">✨</span>
+        <span className="sparkle">✨</span> */}
       </div>
 
       {/* Text content */}
       <div className="text-content">
         <p><strong>Article Title:</strong> California Bill Says</p>
         <p><strong>Abstract:</strong></p>
-        <p>dfdfdfsdfsd</p>
+        <p>quick summary of the bill</p>
       </div>
 
       {/* Footer */}
