@@ -5,10 +5,26 @@
   padding: 12px; /* reduced from 20px */
   margin: 8px;   /* reduced from 10px */
   width: 500px;  /* reduced from 500px */
-  height: 300px;
+  height: 360px;
   background-color: white;
   font-family: sans-serif;
-  font-size: 14px; /* optional: make text smaller */
+  border-color: #4a494b; 
+  border-width: 0.5px; 
+  font-size: 12px; /* optional: make text smaller */
+}
+.search-bar {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+  padding: 12px; /* reduced from 20px */
+  margin: 8px;   /* reduced from 10px */
+  width: 500px;  /* reduced from 500px */
+  height: 360px;
+  background-color: white;
+  font-family: sans-serif;
+  border-color: #4a494b; 
+  border-width: 0.5px; 
+  font-size: 12px; /* optional: make text smaller */
 }
   
   /* Progress Bar */
@@ -27,14 +43,14 @@
   .circle {
     width: 16px;
     height: 16px;
-    border: 2px solid #caa8f5;
+    border: 2px solid hsl(267, 72%, 63%); 
     border-radius: 50%;
     margin: 0 auto;
     background-color: white;
   }
   
   .circle.active {
-    background-color: #caa8f5;
+    background-color: #b1a3c4; 
   }
   
   .label {
@@ -43,18 +59,37 @@
     margin-top: 5px;
   }
   
-  /* Image section */
-  .image-section {
-    background: linear-gradient(to right, #dbeafe, white);
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
+
+  .image-section1 {
+    background-image: url('https://s3-prod.crainsnewyork.com/Immigration%20and%20Customs%20Enforcement%20%28ICE%29%20agents_GettyImages-.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    border-radius: 10px;
     margin-bottom: 10px;
-    position: relative;
   }
+
+    /* Image section 2  */
+  .image-section2 {
+    background-image: url('https://www.racksolutions.com/news//app/uploads/AdobeStock_87909563.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Image section 3 */
   
+  .image-section3 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5452d441e4b0c188b51fef1a/6eedf8f7-7eaa-4842-9349-075816fd5d33/seaaca.jpg');
+    background-size: cover;
+    background-position: top ;
+    height: 170px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
   .sparkle {
     font-size: 24px;
     color: #771c83;
@@ -64,8 +99,16 @@
   /* Text content */
   .text-content {
     text-align: left;
-    font-size: 14px;
-    margin-bottom: 15px;
+    font-size: 12.5px;
+    margin-bottom: 1px;
+    color:rgb(0, 0, 0)
+  }
+
+   /* Text content title */
+   .text-content1 {
+    text-align: left;
+    font-size: 16.10px;
+    margin-bottom: 1px;
     color:rgb(0, 0, 0)
   }
   
