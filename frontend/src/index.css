@@ -27,10 +27,14 @@
 
 .light-theme {
     --primary-color: var(--primary-color-light);
+    background-color: var(--bg-light);
+    color: var(--text-color)
 }
 
 .dark-theme {
     --primary-color: var(--primary-color-dark);
+    background-color: var(--bg-dark);
+    color: var(--text-color-light)
 }
 
 .policies{
@@ -209,3 +213,20 @@
 .content.light-theme {
     background-color: #fafafa;
 }
+
+.menu-item[data-key='login'],
+.menu-item[data-key='profile'] {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* .menu-item[data-key='login']::before,
+.menu-item[data-key='profile']::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.2);
+} */
