@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import UserProfile from ".pages/userProfile";
+import UserProfile from "./pages/userProfile";
+
 
 import Layout from './components/Layout';
 import Policies from './policies-KS/policies';
