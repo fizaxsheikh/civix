@@ -93,9 +93,8 @@ function LoginPage() {
                         <h3 className='loginh3'>One of us?</h3>
                         <p className='loginp'>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, ex ratione. Aliquid!
-
                         </p>
-                        <button onClick={handleSignInClick} className="btn transparent" id="sign-in-btn">
+                        <button className="btn transparent" onClick={handleSignInClick} id="sign-in-btn">
                             Sign in
                         </button>
                     </div>
