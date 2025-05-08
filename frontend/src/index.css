@@ -194,6 +194,7 @@
     height: 100vh;
     top: 0;
     left: 0;
+    border-right: 1px solid var(--primary-color)
 }
   
 .sidebar.dark-theme {
@@ -211,7 +212,7 @@
 }
   
 .content.dark-theme {
-    background-color: #f0f2f5;
+    background-color: #353138;
 }
 
 .content.light-theme {
