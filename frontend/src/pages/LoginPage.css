@@ -194,7 +194,7 @@ body, .LoginInput {
 }
 
 .right-panel {
-    pointer-events: none;
+    pointer-events: all;
     padding: 3rem 12% 2rem 17%;
 }
 

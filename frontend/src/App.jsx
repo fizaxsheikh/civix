@@ -1,14 +1,26 @@
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import UserProfile from ".pages/userProfile";
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import MenuList from './components/MenuList';
-import LoginPage from './pages/LoginPage'
+import LoginPage from './pages/LoginPage';
 
 import Layout from './components/Layout';
 import Policies from './policies-KS/policies';
+import RightSidebar from './components/RightSidebar'; // Import the RightSidebar component
 
-const Home = () => <Policies />;
+import Following from './pages/Following';
+
+const Home = () => (
+  <div style={{ display: 'flex' }}>
+    <div style={{ width: '75%' }}>
+      <Policies />
+    </div>
+    <div style={{ width: '25%' }}>
+      <RightSidebar />
+    </div>
+  </div>
+);
+
 const Events = () => <h1>Events Page</h1>;
 const Notifications = () => <h1>Notifications Page</h1>;
 const Bookmarks = () => <h1>Bookmarks Page</h1>;
@@ -17,6 +29,12 @@ const Settings = () => <h1>Settings Page</h1>;
 
 function App() {
   const [darkTheme, setDarkTheme] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('authToken');
+    setIsAuthenticated(!!token); // Set to true if token exists
+  }, []);
 
   const toggleTheme = () => {
     setDarkTheme(!darkTheme);
@@ -26,17 +44,26 @@ function App() {
     <Router>
       <Routes>
         {/* Fullscreen pages without Layout (e.g., Login) */}
-        <Route path="/login" element={<LoginPage />} />
+        <Route
+          path="/login"
+          element={<LoginPage setIsAuthenticated={setIsAuthenticated} />}
+        />
 
-        {/* Routes with sidebar and layout */}
+        {/* Redirect to login if not authenticated */}
         <Route
           path="/"
           element={
-            <Layout darkTheme={darkTheme} toggleTheme={toggleTheme}>
-              <Home />
-            </Layout>
+            isAuthenticated ? (
+              <Layout darkTheme={darkTheme} toggleTheme={toggleTheme}>
+                <Home />
+              </Layout>
+            ) : (
+              <Navigate to="/login" />
+            )
           }
         />
+
+        {/* Other Routes */}
         <Route
           path="/events"
           element={
@@ -74,6 +101,14 @@ function App() {
           element={
             <Layout darkTheme={darkTheme} toggleTheme={toggleTheme}>
               <Settings />
+            </Layout>
+          }
+        />
+        <Route
+          path="/following"
+          element={
+            <Layout darkTheme={darkTheme} toggleTheme={toggleTheme}>
+              <Following />
             </Layout>
           }
         />

@@ -266,6 +266,7 @@
 // export default Policies;
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Policies.css';
 
 function Policies() {
@@ -289,6 +290,8 @@ function Policies() {
   const [thirdCardLiked, setThirdCardLiked] = useState(false);
   const [thirdCardBookmarked, setThirdCardBookmarked] = useState(false);
   const [thirdCardLikeAnim, setThirdCardLikeAnim] = useState(false);
+
+  const navigate = useNavigate();
 
   // Sample data for the sidebar
   const upcomingEvents = [
@@ -358,6 +361,10 @@ function Policies() {
       setThirdCardBookmarks(thirdCardBookmarks + 1);
     }
     setThirdCardBookmarked(!thirdCardBookmarked);
+  };
+
+  const handleSeeAllClick = () => {
+    navigate('/following');
   };
 
   const handleShareClick = () => {
@@ -499,97 +506,7 @@ function Policies() {
           </div>
         </div>
       </div>
-      
-      {/* Right sidebar */}
-  <div className="sidebar-content">
-    {/* <!-- Suggested Following Section --> */}
-    <div className="sidebar-section">
-      <div className="section-header">
-        <h3>Suggested Following</h3>
-        <span className="more-options">...</span>
-      </div>
-      <div className="section-body">
-        {/* <!-- Politician Profile Item --> */}
-        <div className="profile-item">
-          <div className="profile-avatar1"></div>
-          <div className="profile-info">
-            <p className="profile-name">Gavin Newsom (D)</p>
-            <p className="profile-title">Governor of California</p>
-          </div>
-        </div>
-        
-        {/* <!-- Politician Profile Item --> */}
-        <div className="profile-item">
-          <div className="profile-avatar2"></div>
-          <div className="profile-info">
-            <p className="profile-name">Alex Padilla (D)</p>
-            <p className="profile-title">U.S. Senator, California</p>
-          </div>
-        </div>
-        
-        {/* <!-- Politician Profile Item --> */}
-        <div className="profile-item">
-          <div className="profile-avatar3"></div>
-          <div className="profile-info">
-            <p className="profile-name">Adam Schiff (D)</p>
-            <p className="profile-title">U.S. Senator, California</p>
-          </div>
-        </div>
-        
-        {/* <!-- Judge Profile Item --> */}
-        <div className="profile-item">
-          <div className="profile-avatar4"></div>
-          <div className="profile-info">
-            <p className="profile-name">Mike Levin (D)</p>
-            <p className="profile-title">U.S. Representative, California</p>
-          </div>
-        </div>
-        
-        <button className="see-all-button">SEE ALL</button>
-      </div>
-    </div>
-    
-    {/* <!-- Events Section --> */}
-    <div className="sidebar-section">
-      <div className="section-header">
-        <h3>Events</h3>
-        <span className="more-options">...</span>
-      </div>
-      <div className="section-body">
-        {/* <!-- Event Item --> */}
-        <div className="event-item">
-          <div className="event-icon election-icon">
-            <i className="calendar-icon"></i>
-          </div>
-          <div className="event-info">
-            <p className="event-title"> <strong> 5/2/25 </strong> - LA City Council Meeting</p>
-          </div>
-        </div>
-        
-        {/* <!-- Event Item --> */}
-        <div className="event-item">
-          <div className="event-icon meeting-icon">
-            <i className="building-icon"></i>
-          </div>
-          <div className="event-info">
-            <p className="event-title"> <strong> 4/28/25 </strong> - Congressman Sherman Town Hall Meeting </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    {/* <!-- Suggested Bills Section --> */}
-    <div className="sidebar-section">
-      <div className="section-header">
-        <h3>Suggested Bills</h3>
-        <span className="more-options">...</span>
-      </div>
-      <div className="section-body bills-section">
-        {/* <!-- This section is empty in the image but structure is in place --> */}
-      </div>
-    </div>
-  </div>
-</div>
+      </div>   
   ); 
 }
 
