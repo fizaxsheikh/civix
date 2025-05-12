@@ -586,6 +586,8 @@ function Policies() {
       </div>
       <div className="section-body bills-section">
         {/* <!-- This section is empty in the image but structure is in place --> */}
+        <div className="bill-item"></div> 
+        <p className="bill-title"> <strong> 5/2/25 </strong> - LA City Council Meeting</p>
       </div>
     </div>
   </div>
