@@ -40,7 +40,6 @@
 .policies{
     border: 1px solid var(--primary-color);
     border-radius: 10px; 
-    box-shadow: 5px 5px 5px var(--shadow-color); 
     padding: 20px; 
     margin: 10px; 
     text-align: center;
@@ -81,7 +80,7 @@
 
 /* Custom menu styles */
 .custom-menu {
-    height: 91vh;
+    height: 100vh;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -235,3 +234,66 @@
     height: 1px;
     background-color: rgba(128, 128, 128, 0.2);
 } */
+
+/* Additional CSS to add to your existing CSS file */
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.notification-dropdown-container {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1000;
+}
+
+.notifications-active {
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+}
+
+/* Dark mode adjustments */
+.dark-theme .notifications-active {
+  background-color: rgba(var(--primary-color-dark-rgb), 0.2);
+}
+
+/* Add a CSS variable for rgba values */
+:root {
+  --primary-color-rgb: 144, 95, 193;
+  --primary-color-dark-rgb: 190, 159, 225;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.collapsed .menu-item span {
+    display: none;
+}
+
+.sidebar.collapsed .menu-item {
+    justify-content: center;
+}
+
+.sidebar.collapsed .toggle-theme-btn {
+    left: 10px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .notification-dropdown-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+  }
+}
