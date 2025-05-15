@@ -368,7 +368,7 @@ function Policies() {
   return (
     <div className="page-layout" style={{ display: 'flex' }}>
       {/* Main content area */}
-      <div className="main-content" style={{ width: '75%' }}>
+      <div className="main-content" style={{ width: '100%' }}>
       <div className="search-bar"></div>
         <div className="card-container">
           {/* --- First Card (Original) --- */}

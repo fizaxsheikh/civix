@@ -1,15 +1,38 @@
+/* Base styling for policy cards (kept minimal here for clarity) */
 .policies {
-  border: 0.5px solid #4a494b;
+  border: 0.5px solid var(--primary-color);
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
   padding: 12px;
-  margin: 8px auto;  /* Center horizontally */
-  width: 500px;
+  margin: 8px auto;
+  width: 75%;
   height: 360px;
-  background-color: white;
   font-family: sans-serif;
   font-size: 12px;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
 }
+
+/* Dark theme override */
+.dark-theme .policies {
+  background-color: #2d2b30; /* darker background for dark theme */
+  color: var(--text-color-light);
+  border-color: var(--primary-color);
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.05);
+}
+
+/* Optional: smooth image and text transitions */
+.policies img,
+.policies .text-content,
+.policies .text-content1 {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
 
 .search-bar {
   border: 1px solid #645e5e;
@@ -17,7 +40,7 @@
   box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
   padding: 12px; /* reduced from 20px */
   margin: 8px auto;   /* reduced from 10px */
-  width: 500px;  /* reduced from 500px */
+  width: 70%;  /* reduced from 500px */
   height: 10px;
   background-color: rgba(50, 48, 48, 0.116);
   font-family: sans-serif;
@@ -109,6 +132,17 @@
     margin: 0 4px;
   }
   
+  .text-content,
+  .text-content1 {
+    color: var(--text-color);
+  }
+  
+  .dark-theme .text-content,
+  .dark-theme .text-content1 {
+    color: var(--text-color-light);
+  }
+  
+
   /* Text content */
   .text-content {
     text-align: left;
@@ -137,6 +171,7 @@
     font-size: 14px;
     color: #555;
   }
+  
   
   .read-more {
     background-color: #9b5de5;
@@ -260,16 +295,41 @@
 
 /* Right sidebar styles */
 /* Right Navigation Bar Styles */
+
+.sidebar-section {
+  
+  transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease;
+  border-right: 1px solid var(--primary-color);
+  background-color: var(--bg-light);  /* default fallback */
+  color: var(--text-color);
+}
+
+.light-theme .sidebar-section {
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  border-color: var(--primary-color-light);
+}
+
+.dark-theme .sidebar-section {
+  background-color: var(--bg-dark);
+  color: var(--text-color-light);
+  border-color: var(--primary-color-dark);
+}
+
+
 .sidebar-container {
-  width: 30px;
-  margin-left: 20px;
+  width: 20%;
+  margin-left: 5%;
   font-family: Arial, sans-serif;
+  
 }
 
 .sidebar-content {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 25%;
+  margin-right: 0px;
 }
 
 /* Section Styles */
