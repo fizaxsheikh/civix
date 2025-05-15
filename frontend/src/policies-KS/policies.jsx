@@ -594,3 +594,17 @@ function Policies() {
 }
 
 export default Policies;
+
+
+/*
+
+{item.key === 'notification' && showNotifications && (
+              <div className="notification-dropdown-container">
+                <NotificationsDropdown
+                  darkTheme={darkTheme}
+                  onClose={() => onToggleNotifications(false)}
+                />
+              </div>
+            )}
+
+*/
